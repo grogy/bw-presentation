@@ -1,0 +1,10 @@
+log/*
+temp/*
+vendor/*
+!vendor/others
+
+!.gitignore
+!.htaccess
+!web.config
+composer.lock
+app/config/config.local.neon
