@@ -2,8 +2,7 @@
 
 namespace App\Presenters;
 
-use Nette,
-	App\Model;
+use App\Model\ProposalImprove;
 
 
 /**
@@ -11,10 +10,20 @@ use Nette,
  */
 class HomepagePresenter extends BasePresenter
 {
+	/**
+	 * @var ProposalImprove
+	 */
+	private $proposalImprove;
+
+
+	public function __construct(ProposalImprove $proposalImprove)
+	{
+		$this->proposalImprove = $proposalImprove;
+	}
+
 
 	public function renderDefault()
 	{
-		$this->template->anyVariable = 'any value';
+		$this->template->proposals = $this->proposalImprove->getProposals();
 	}
-
 }

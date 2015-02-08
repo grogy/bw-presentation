@@ -22,5 +22,5 @@ nette:
 
 
 services:
-	- App\Model\UserManager
+	- App\Model\ProposalImprove
 	router: App\RouterFactory::createRouter
