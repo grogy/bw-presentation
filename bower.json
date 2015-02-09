@@ -1,0 +1,6 @@
+{
+    "name": "bw-presentation",
+    "dependencies": {
+        "bootstrap-sass": "v3.3.2"
+    }
+}

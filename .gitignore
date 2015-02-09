@@ -1,4 +1,7 @@
+.sass-cache/*
+bower_components/*
 log/*
+www/css/*
 temp/*
 vendor/*
 !vendor/others
