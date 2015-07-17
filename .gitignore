@@ -1,15 +1,16 @@
-.sass-cache/*
-bower_components/*
-doc/*
-dev-dependencies/*
-log/*
-www/css/*
-temp/*
-vendor/*
-!vendor/others
+.sass-cache/
+src/bower_components/
+doc/
+dev-dependencies/
+src/log/
+src/www/css/
+src/temp/
+/src/vendor/
+!src/vendor/others
 
 !.gitignore
 !.htaccess
 !web.config
 composer.lock
-app/config/config.local.neon
+src/app/config/config.local.neon
+dev/deploy.sh
