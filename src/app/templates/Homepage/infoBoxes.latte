@@ -1,0 +1,13 @@
+{block content}
+
+<div class="jumbotron">
+    <h1>Nesrovnalosti v info boxech</h1>
+    <p>Systém detekoval, že v některých info boxech chybí informace či jsou možná špatně.</p>
+    <p><a n:href="Homepage:" class="btn btn-default" role="button">Vrátit se zpět na rozcestník</a></p>
+</div>
+
+<div n:foreach="$proposals as $proposal">
+    <h2><a href="https://cs.wikipedia.org/wiki/{$proposal->name|url}">{$proposal->name}</a></h2>
+    <pre>{$proposal->notice}</pre>
+    <hr>
+</div>

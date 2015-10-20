@@ -22,8 +22,14 @@ class HomepagePresenter extends BasePresenter
 	}
 
 
-	public function renderDefault()
+	public function renderCsfd()
 	{
-		$this->template->proposals = $this->proposalImprove->getProposals();
+		$this->template->proposals = $this->proposalImprove->getProposals(1);
+	}
+
+
+	public function renderInfoBoxes()
+	{
+		$this->template->proposals = $this->proposalImprove->getProposals(2);
 	}
 }
