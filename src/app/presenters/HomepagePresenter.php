@@ -32,4 +32,10 @@ class HomepagePresenter extends BasePresenter
 	{
 		$this->template->proposals = $this->proposalImprove->getProposals(2);
 	}
+
+
+	public function renderPortals()
+	{
+		$this->template->proposals = $this->proposalImprove->getProposals(3);
+	}
 }
