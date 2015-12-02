@@ -27,7 +27,8 @@ class ProposalImprove
 			  	AND a.name NOT LIKE \'%Kategorie:%\'
 			  	AND a.name NOT LIKE \'%Wikipedie:%\'
 			  	AND a.name NOT LIKE \'%Wikipedista:%\'
-			ORDER BY a.name';
+			ORDER BY a.name
+			LIMIT 500';
 		return $this->database->query($query, $type)->fetchAll();
 	}
 }
